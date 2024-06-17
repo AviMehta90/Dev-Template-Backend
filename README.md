@@ -1,4 +1,4 @@
-# dev-template-backend
+# Dev Template Backend
 
 ## Overview
 
@@ -25,91 +25,79 @@ This repository serves as a template for creating Node.js applications with a cl
 
 1. Clone the repository:
 
-   ```sh
-   git clone https://github.com/AviMehta90/dev-template-backend.git
-   cd dev-template-backend
-   ```
+```sh
+git clone https://github.com/AviMehta90/dev-template-backend.git
+cd dev-template-backend
+```
 
 2. Install dependencies:
 
-   ```sh
-   npm install
-   ```
+```sh
+npm install
+```
 
 ### Scripts
 
 - **Build**: Compile TypeScript to JavaScript.
 
-  ```sh
-  npm run build
-  ```
+```sh
+npm run build
+```
 
 - **Build and Watch**: Compile TypeScript and watch for changes.
 
-  ```sh
-  npm run build:watch
-  ```
+```sh
+npm run build:watch
+```
 
 - **Start**: Run the application.
 
-  ```sh
-  npm start
-  ```
+```sh
+npm start
+```
 
-- **Development**: Run the application with live reload.
+- **Development**: Run the application with live reload in dev mode.
 
-  ```sh
-  npm run start:dev
-  ```
+```sh
+npm run start:dev
+```
 
 - **Test**: Run tests with Jest.
 
-  ```sh
-  npm test
-  ```
+```sh
+npm test
+```
 
 - **Test Watch**: Run tests and watch for changes.
 
-  ```sh
-  npm run test:watch
-  ```
+```sh
+npm run test:watch
+```
 
 - **Test CI**: Run tests with coverage.
 
-  ```sh
-  npm run test:ci
-  ```
+```sh
+npm run test:ci
+```
 
 - **Lint**: Lint the codebase with ESLint.
 
-  ```sh
-  npm run lint
-  ```
+```sh
+npm run lint
+```
 
 - **Prepare**: Set up Git hooks with Husky.
 
-  ```sh
-  npm run prepare
-  ```
-
-## Project Structure
-
 ```sh
-dist/                 # Compiled JavaScript files
-src/                  # Source TypeScript files
-  ├── config/         # Configuration files
-  ├── controllers/    # Controller files
-  ├── models/         # Data models
-  ├── routes/         # Route handlers
-  ├── services/       # Service layer
-  ├── utils/          # Utility functions
-  ├── middlewares/    # Middleware functions
-tsconfig.json         # TypeScript configuration
-tsconfig-build.json   # TypeScript build configuration
-eslint.config.mjs     # ESLint configuration
-jest.config.ts        # Jest configuration
-package.json          # Project metadata and dependencies
+npm run prepare
 ```
+
+## Pre-commit Hooks
+
+This repository uses Husky and lint-staged to ensure code quality before commits. The following actions are performed on staged files:
+
+- Linting using ESLint
+- Running related tests
 
 ## Contributing
 
