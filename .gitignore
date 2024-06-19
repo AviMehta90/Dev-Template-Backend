@@ -136,6 +136,9 @@ dist
 .vscode
 .DS_Store
 
+# Build and coverage folder
 /dist
-
 /coverage
+
+# Sample Notes
+notes.txt
