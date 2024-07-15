@@ -142,3 +142,6 @@ dist
 
 # Sample Notes
 notes.txt
+
+# Lockfile
+package-lock.json
